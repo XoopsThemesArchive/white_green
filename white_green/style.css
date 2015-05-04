@@ -1,0 +1,411 @@
+/* project: internet center template
+   author: luka cvrk (www.solucija.com) */
+
+table {width: 100%;}
+/* default styles
+   -------------- */
+   
+body { 
+	padding: 0; 
+	margin: 0; 
+	font: 0.7em Tahoma, sans-serif; 
+	line-height: 1.5em;
+	background: #fff; 
+	color: #454545;
+	}
+
+a {
+	color: #185DA0;
+	background: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #9EC068;
+	background: inherit;	
+	text-decoration: none;
+}
+
+a.title {
+	color: #FE6700;
+	background: #FFF;
+}
+
+.banner {
+	padding-bottom: 2px;
+	padding-top: 2px;
+	text-align: center;
+	}
+h1 {
+	font: bold 2em Arial, Sans-Serif;
+   padding-top: 20px;	
+	margin: 0;
+	text-align: center;
+}
+
+h1 a, h2 a {
+	text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover {
+	color: #FF6600;
+	background: #FFF;
+}
+
+
+h2 { 
+	margin: 0; 
+	padding: 0; 
+	font: bold 1.7em Arial, Sans-Serif; 
+}
+
+h2 { 
+	font-size: 15px;
+	margin-bottom: 5px; 
+	color: #000; 
+	background: inherit;
+}
+
+p {	
+	margin: 0 0 5px 0;
+	
+}
+
+ul { 
+	margin: 0; 
+	padding : 0; 
+	list-style : none; 
+}
+
+form { 
+	margin: 0; 
+}
+
+input.search { 
+	width: 199px; 
+	border: none;
+	background: url(images/search.gif); 
+	padding: 2px; 
+	border: 1px solid #9EC068;
+}
+
+input, .button {
+	border: 1px solid #9EC068;
+   background: #f5fcf4; 
+	padding: 2px 2px 0px 1px;
+}
+/* layout
+   ------ */
+
+.logo {
+   text-align: left;
+   padding: 2px;
+}
+.content { 
+	margin: 10px auto;
+	width: 760px; 
+}
+
+.header { 
+	height: 45px; 
+}
+
+.top_info {
+	float: right;
+	width: 570px;
+	padding: 0 0 4px 0;
+	border-bottom: 1px solid #eee;
+}
+
+	.top_info_left {
+		width: 240px;
+		float: left;
+	}
+
+	.top_info_right {
+		float: right;
+		width: 290px;
+		padding: 0 0 0 35px;
+		border-left: 1px solid #eee;
+	}
+
+.slogan {
+	font-size: 0.9em;
+	width: 180px;
+}
+
+
+.bar { 
+	clear: both;
+	font-size: 1.1em;
+	height: 30px; 
+	margin: 0 0 0 0px; 
+}
+
+	.bar li { 
+		margin: 0; 
+		padding: 4px 10px 8px 10px;
+		color: #808080;
+		background: #FFF;
+		float: left; 
+	}
+	
+	.bar li:hover a{ 
+		background: #FFFFFF url(images/y_navigation.gif) no-repeat center bottom; 
+		color: #9EC068;
+		font-weight: bold; 
+		padding-bottom: 8px; 
+	}
+
+	.bar a { 
+		font-weight: bold;
+		color: #4A8EBC; 
+		background: inherit;	
+	} 
+
+.search_field { 
+	background: #DCF2B8 url(images/banner_bg.gif) no-repeat; 
+	color: #000;
+	border-top: 1px solid #9EC068;
+	border-bottom: 1px solid #9EC068;
+	clear: both;
+	text-align: right; 
+	padding: 10px 0 5px 0;
+}
+
+.subheader {
+	margin: 3px 0 10px 0;
+	padding: 8px;
+	background: #f4f4f4 url(images/der_banner_bg.gif) no-repeat;
+	color: #808080;
+	border-bottom: 1px solid #ccc;
+}
+
+td#usermenu a {text-align: left; background-color: White; display: block; margin: 0; padding: 4px;}
+td#usermenu a:hover {background-color: #E4E4E4;}
+td#usermenu a.highlight {background-color: #fcc;}
+/* left side
+   --------- */
+
+.noleft {
+	float: center;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+.left {
+	float: left;
+	width: 525px;
+	margin: 0 0 10px 0;
+}
+	.left_articles {
+		margin: 0px 0 10px 0;
+		padding: 2px;
+	}
+
+	.left_links {
+		border: 1px solid #eee;
+		padding: 10px 10px 10px 15px;	
+		margin: 0 0 10px 0;
+	}
+	
+	.left_links:hover {
+		border: 1px solid #ccc;
+	}
+	
+		.left_side {
+			float: left;
+			width: 47%;
+		    border: 1px solid #eee;
+		    padding: 0 0 0 5px;
+		    margin: 0 0 5px 0;
+		}
+		
+		.right_side {
+			float: right;
+			width: 47%;
+		    border: 1px solid #eee;
+		    padding: 0 0 0 15px;
+		    margin: 0 0 5px 0;
+		}
+
+	.left_box {
+		background: #f4f4f4;
+		color: #000;
+		border: 1px solid #ccc;
+		padding: 10px;
+		text-align: right;
+		}
+	
+/* right side
+   ---------- */
+		
+.right {
+	float: right;
+	width: 220px;
+	margin: 0 0 10px 0;
+}
+
+	.right_articles {
+		border: 1px solid #eee;
+		padding: 8px;	
+		margin: 0 0 10px 0;
+	}
+	
+	.right_articles:hover {
+		border: 1px solid #ccc;
+	}
+		
+.image {
+	float: left;
+	margin: 0 9px 3px 0;
+}
+
+/* footer
+   ------ */
+
+.footer {
+    clear: both; 
+	text-align: center;
+	line-height: 1.8em;
+	color: #808080;
+	background: #FFF;
+	padding: 5px 0 5px 0;
+	border-top: 1px solid #eee;
+	font-size: 10px;
+}
+
+.footer a {
+	color: #9EC068;
+	background: #fff;
+}
+/* item
+   ------ */
+th {background-color: #DCF2B8; color: #136C99; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica;}
+
+th a{background-color: #DCF2B8; color: #136C99; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica;}
+
+.item {border: 1px dotted #9EC068;}
+.itemHead {padding: 3px; border: 1px solid #FFFFFF; color: #454545; background-color: #DCF2B8;}
+.itemInfo {
+	text-align: center;
+	padding: 3px;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	color: #54606C;
+	background-color: #f4f4f4;
+}
+.itemTitle a:link, .itemTitle a:active, .itemTitle a:visited {color: #136C99; font-weight: bold; text-decoration: none;}
+.itemTitle a:hover {color: #454545; font-weight: bold; text-decoration: underline;}
+.itemPoster {font-size: 10px;}
+.itemPostDate {font-size: 10px;}
+.itemStats {font-size: 10px;}
+.itemBody {padding-left: 3px;}
+.itemText {margin-top: 3px; margin-bottom: 3px; line-height: 180%;}
+.itemText:first-letter {}
+.itemFoot {text-align: center; padding:3px; border:1px solid #FFFFFF; color: #708090; background-color: #E2E6E9;}
+.itemAdminLink {font-size: 10px;}
+.itemPermaLink {font-size: 10px;}
+
+.outer {border: 1px dotted #D3D3D3;}
+.head {background-color: #F8E8B1; color: #696767; padding: 3px; font-weight: bold;}
+.even {background-color: #f5f5f5; padding: 3px;}
+.odd {background-color: #FFFFFF; padding: 3px;}
+tr.even td {background-color: #f5f5f5; padding: 3px;}
+tr.odd td {background-color: #ffffff; padding: 3px;}
+.foot {background-color: #f5f5f5; padding: 3px; font-weight: bold;}
+
+/* listing
+   ------ */
+
+li {margin-left: 1px; list-style: url(images/x_navigation.gif) circle inside; color: #000000;}
+
+
+div.errorMsg {background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg {background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg {background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsQuote {color: #FF6600; background-color: #ffffff; border: 1px dashed #FFCC00; padding: 6px;}
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: 10px;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.statstable { margin:0px; padding:0px; width:auto; font-size: 10px; font-weight: normal;}
+.stats { vertical-align: bottom; width:625px; margin:0; border: 0;}
+.statsimg { vertical-align: bottom; width:25px; text-align:center;}
+.statsimgweekday { vertical-align: bottom; font-size: 10px; font-weight: normal;}
+.statswords { border-width: 0; font-size: 10px; background-color: transparent; font-weight: normal; text-align:center; width:25px;}
+.statsfore { width: 30%; padding:2px;}
+.statsdiv { text-align:center; padding:0px;}
+
+div.xoopsCode {	font-size: 12px;
+	font-family: FixedSys, "Courier New",Courier,monospace;
+	background: #ffffff;
+	border: 1px dashed #FFCC00;
+	color: #385a72;
+	width: 500px;
+	height: 200px;
+	margin: 0.5em;
+	overflow: auto;
+	padding: 3px 3px 3px 3px;
+}
+
+html {
+	scrollbar-3dlight-color:#d1d7dc;
+	scrollbar-arrow-color:#006699;
+	scrollbar-darkshadow-color:#d9e2ec;
+	scrollbar-face-color:#D1DCEB;
+	scrollbar-highlight-color:#ffffff;
+	scrollbar-shadow-color:#D1DCEB;
+	scrollbar-track-color:#eaedf4;
+}
+/* CBB */
+
+tr.foot td {background-color: #f7f7f7; padding: 3px; font-weight: bold;}
+
+/* color -- dropdown menu for Forum */
+div.dropdown a, div.dropdown .menubar a{
+	color:#FFF;
+}
+
+div.dropdown .menu, div.dropdown .menubar, div.dropdown .item, div.dropdown .separator{
+	background-color: #2F5376; /* color set in your theme/style.ss .th{} is recommended */
+	color:#FFF;
+}
+
+div.dropdown .separator{
+	border: 1px inset #e0e0e0;
+}
+
+div.dropdown .menu a:hover, div.dropdown .userbar a:hover{
+	color: #333;
+}
+/* color - end */
+
+
+/* direction -- for rtl */
+div.dropdown ul, div.dropdown .userbar{
+	direction: ltr;
+}
+
+div.dropdown li ul {
+	left: -150px !important; /* for IE, tune the value if necessary */
+}
+div.dropdown li>ul { 
+	left: -1px !important; /* for non-IE, tune the value if necessary */
+}
+
+div.dropdown .userbar{
+	float: right !important;  /* need a more formal solution, any help would be appreciated */
+}
+/* direction fix end */

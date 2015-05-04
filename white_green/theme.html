@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<script language="JavaScript1.2">
+var bookmarkurl="<{$xoops_url}>"
+var bookmarktitle="<{$xoops_sitename}>"
+
+function addbookmark(){
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+</script>
+</head>
+<body>
+<!-- 菜单调用文件 -->
+  <{include_php file="$xoops_rootpath/themes/white_green/menu.php"}>
+<!-- 菜单调用文件 -->
+	<div class="content">
+		<div class="header">
+			<div class="top_info">
+				<div class="top_info_right">
+					<p><{if !$xoops_isuser}>
+					
+					<b>你还未登陆请点这里</b> <a href="<{$xoops_url}>/user.php">登陆</a><br />
+					<b>你还未注册请点这里</b> <a href="<{$xoops_url}>/register.php">注册</a><br />
+					成为会员你将享受更多丰富内容...<{else}>
+					<br>欢迎您， <a href="<{$xoops_url}>/user.php"><b><{$xoops_uname}></b> </a><br />
+		<div class="bar">
+			<ul>
+				<li><a href="<{$xoops_url}>/user.php" accesskey="i">资料</a></li>
+				<li><a href="<{$xoops_url}>/viewpmsg.php" accesskey="f">消息(<{xoInboxCount}>)</a></li>
+				<li><a href="<{$xoops_url}>/notifications.php" accesskey="p">通知</a></li>
+                <li><a href="<{$xoops_url}>/user.php?op=logout" accesskey="b">退出</a></li>
+               <{if $xoops_isadmin}>
+		        <li><a href="<{$xoops_url}>/admin.php">管理</a></li>
+		  <{/if}>
+			</ul>
+		</div>
+				 <{/if}>
+				</p>
+				</div>		
+				<div class="top_info_left">
+					<p>现在时间是: <b><span id="clock"> <script language="JavaScript" type="text/javascript" src="<{$xoops_imageurl}>js/time.js"></script> </span></b><br />
+					<img src="<{$xoops_imageurl}>images/bmark.png">&nbsp;<a href="javascript:addbookmark()">加入到收藏夹</a><br />
+				<img src="<{$xoops_imageurl}>images/home.png">&nbsp;<a onclick="this.style.behavior='url(#default#homepage)';&#10;this.setHomePage('<{$xoops_url}>');" 
+                        href="<{$xoops_url}>#">设为首页</a></p>
+				</div>
+			</div>
+			<div class="logo">
+				<a href="http://theme.xoops.org.cn" target="_top"><img src="<{$xoops_imageurl}>images/logo.gif" width="160" height="60" border="0" alt="<{$xoops_sitename}>" /></a>
+			</div>
+		</div>
+		
+		<div class="bar">
+<!-- 菜单开始  --> 
+<!-- 主菜单  --> 
+  <tr>
+  <ul>
+    <li><{foreach item=module from=$ex_mainmenu.modules }> <a href="<{$xoops_url}>/modules/<{$module.directory}>/" accesskey="f"><{$module.name}></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{/foreach}> </li> 
+  </ul>
+  </tr> 
+<!-- 主菜单完  -->
+<!-- 菜单完  -->
+		</div>
+		<div class="search_field">
+			<form method="get" action="<{$xoops_url}>/search.php">
+				<p><input type="text" name="query" class="search" /> <input type="hidden" name="action" value="results" /><input class="button" type="submit" value="搜索" class="searchSubmit" /> <a href="<{$xoops_url}>/search.php">高级搜索</a></p>
+			</form>
+		</div>
+		<div class="subheader">
+			<p>
+<!-- 次级菜单  -->
+  <ul>
+    <li class="text_menu"><{if $ex_moduledir }> <{foreach item=module from=$ex_mainmenu.modules }> <{if $module.directory == $ex_moduledir && $module.sublinks }>| <{foreach item=sublink from=$module.sublinks}> <a href="<{$sublink.url}>"> <{$sublink.name}></a> | <{/foreach}> <{/if}> <{/foreach}> <{/if}> </li> 
+  </ul>
+<!-- 次级菜单完  --> 
+			</p>
+		</div>
+                <{if $xoops_showrblock == 0}>
+                <div class="noleft">                
+                <{/if}>
+                <{if $xoops_showrblock == 1}>
+		<div class="left">
+                <{/if}>
+			<div class="banner"><{$xoops_banner}></div>
+			<{foreach item=block from=$xoops_ccblocks}>
+		<div class="left_links"><b><{$block.title}></b><br>
+              		<{$block.content}>
+		</div>
+            	<{/foreach}>
+		<{$xoops_contents}>
+		<br>
+		<div class="left">
+			<{foreach item=block from=$xoops_clblocks}>
+			<div class="left_side"><b><{$block.title}></b><br>
+				<{$block.content}>
+			</div>
+			<{/foreach}>	
+			<{foreach item=block from=$xoops_crblocks}>
+			<div class="right_side"><b><{$block.title}></b><br>
+				<{$block.content}>
+			</div>
+			<{/foreach}>			
+		</div>	
+			<div>
+			</div>
+		</div>	
+		<div class="right">
+			<{foreach item=block from=$xoops_lblocks}>
+			<{if $block.title <> "用户菜单" && $block.title <> "会员登录"}>
+			<div class="right_articles"><b><{$block.title}></b><br>
+				<{$block.content}>
+			</div>
+			<{/if}>
+			<{/foreach}>
+			<{foreach item=block from=$xoops_rblocks}>
+			<div class="right_articles"><b><{$block.title}></b><br>
+				<{$block.content}>
+			</div>
+			<{/foreach}>
+		</div>
+                
+                 <table>
+
+		<div class="footer">
+			<{$xoops_footer}>
+	</div>
+ </table>
+</body>
+</html>
